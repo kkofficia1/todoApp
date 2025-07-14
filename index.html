@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDo App</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="app.js" defer></script>
+</head>
+<body>
+    <header>
+    <h1>To Do App</h1>
+    <button id="switch">Mode Switch</button>
+    </header>
+    <h2>What's on your list?</h2>
+    <table id="ToDoList">
+        <thead>
+            <td>Name</td>
+            <td>Due Date</td>
+            <td>Progress</td>
+        </thead>
+        <tr>
+            <td>To Do 1</td>
+            <td>24.09.2025</td>
+            <td>in Progress</td>
+        </tr>
+    </table>
+    <form id="inputForm">
+        <input type="text" placeholder="ToDo-Name">
+        <input type="date">
+        <select name="progress" id="progress">
+            <option value="notStarted">Not Started</option>
+            <option value="inProgress">In Progress</option>
+            <option value="done">Done</option>
+        </select>
+        <button type="submit" id="submitButton">Add to list</button>
+    </form>
+    <button id="formExpander">+</button>
+</body>
+</html>
